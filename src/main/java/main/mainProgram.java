@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 public class mainProgram {
 
 	public static void main(String[] args) throws IOException {
+
 		christofidesAlgorithm("crimeSample.csv", 2, "simopt");
 	}
 
@@ -67,6 +68,7 @@ public class mainProgram {
 			System.out.println("Inside Simulated Opt");
 			break;
 		}
+
 		}
 		System.out.println(travelingSalesPath.size() + " final size");
 		ChristofidesTour finalAnswer = finalAnswer(travelingSalesPath, distances, inputFilePath);
