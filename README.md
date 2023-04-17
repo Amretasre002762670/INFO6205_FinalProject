@@ -1,2 +1,7 @@
-# INFO6205_FinalProject
-INFO 6205 Final Project
+Team 20
+
+Team Members:
+
+Surbhi Soni
+Amretasre
+Priyal Gudhka
