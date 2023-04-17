@@ -1,0 +1,11 @@
+*.py
+__pycache__/TSPAllVisited.cpython-35.pyc
+build
+*.iml
+*.txt.tour
+.DS_Store
+.idea
+.classpath
+.project
+.settings
+/target/
