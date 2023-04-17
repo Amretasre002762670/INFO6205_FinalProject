@@ -8,7 +8,8 @@ import javax.swing.JFrame;
 public class mainProgram {
 
 	public static void main(String[] args) throws IOException {
-		christofidesAlgorithm("crimeSample.csv", 2, "");
+
+		christofidesAlgorithm("crimeSample.csv", 2, "simopt");
 	}
 
 	public static ChristofidesTour christofidesAlgorithm(String inputFilePath, int secondsToRunTwoOpt, String optimization)
@@ -52,7 +53,6 @@ public class mainProgram {
 			break;
 		}
 		case "threeopt": {
-			System.out.println("Inside 3 opt");
 			travelingSalesPath = TSPThreeOpt.threeOpt(travelingSalesPath, distances);
 			System.out.println("Inside Three Opt");
 			break;
@@ -68,15 +68,7 @@ public class mainProgram {
 			System.out.println("Inside Simulated Opt");
 			break;
 		}
-		
-		case "genopt":
-		{
-			TSPGeneticAlgorithm tsp = new TSPGeneticAlgorithm(travelingSalesPath, distances, 100,0.1,0.015);
-			travelingSalesPath = tsp.solve();
-			System.out.println("Inside Gen Opt");
 
-			break;
-		}
 		}
 		System.out.println(travelingSalesPath.size() + " final size");
 		ChristofidesTour finalAnswer = finalAnswer(travelingSalesPath, distances, inputFilePath);
