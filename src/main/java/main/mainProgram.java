@@ -8,8 +8,9 @@ import javax.swing.JFrame;
 public class mainProgram {
 
 	public static void main(String[] args) throws IOException {
-
-		christofidesAlgorithm("crimeSample.csv", 2, "simopt");
+		
+		// Mention the optimisation method to be used
+		christofidesAlgorithm("crimeSample500.csv", 2, "twoopt"); 
 	}
 
 	public static ChristofidesTour christofidesAlgorithm(String inputFilePath, int secondsToRunTwoOpt, String optimization)
@@ -58,8 +59,8 @@ public class mainProgram {
 			break;
 		}
 		case "aco": {
-			ACOChristofides aco = new ACOChristofides(travelingSalesPath, distances);
-			travelingSalesPath = aco.acoChristofides();
+			ACOChristofidesSolver aco = new ACOChristofidesSolver(travelingSalesPath, distances);
+			travelingSalesPath = aco.solve();
 			System.out.println("Inside ACO Opt");
 			break;
 		}
