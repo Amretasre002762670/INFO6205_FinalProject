@@ -11,7 +11,7 @@ public class TSPMainProgram {
 
 		// Based on the last parameter passed, an optimization algorithm will be
 		// executed
-		christofidesAlgorithm("cc.csv", 2, "aco");
+		christofidesAlgorithm("crimeSample500.csv", 2, "");
 	}
 
 	public static ChristofidesTour christofidesAlgorithm(String inputFilePath, int secondsToRunTwoOpt,
