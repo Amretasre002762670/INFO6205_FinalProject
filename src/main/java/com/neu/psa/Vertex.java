@@ -1,4 +1,4 @@
-package main;
+package com.neu.psa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +43,6 @@ public class Vertex {
 		return edge.getWeight();
 	}
 
-
-
 	public List<Vertex> getPathTo(Vertex other, int n) {
 		List<Vertex> path = new ArrayList<>();
 		if (id < other.id) {
@@ -53,13 +51,13 @@ public class Vertex {
 																											
 			}
 		} else {
-			for (int i = id + 1; i <= n; i++) {
+			for (int i = id + 1; i <= n; i++) 
 				path.add(new Vertex(i, other.getVertexID(), other.getLongitude(), other.getLatitude()));
 																											
-			}
-			for (int i = 1; i <= other.id; i++) {
+			
+			for (int i = 1; i <= other.id; i++) 
 				path.add(new Vertex(i, other.getVertexID(), other.getLongitude(), other.getLatitude())); 
-			}
+			
 		}
 		return path;
 	}

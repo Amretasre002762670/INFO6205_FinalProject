@@ -1,19 +1,20 @@
-package main;
+package com.neu.psa;
 
 public class Edge {
 
+	Vertex ownerVertex;
+	Vertex childVertex;
 	double parentId;
 	double childId;
 	double weight;
-	Vertex ownerVertex;
-	Vertex childVertex;
 
 	public Edge(Vertex parentEdge, Vertex childEdge, double distance) {
-		parentId = parentEdge.getID();
-		childId = childEdge.getID();
-		weight = distance;
+
 		ownerVertex = parentEdge;
 		childVertex = childEdge;
+		weight = distance;
+		parentId = parentEdge.getID();
+		childId = childEdge.getID();
 	}
 
 	public Vertex getOwner() {
