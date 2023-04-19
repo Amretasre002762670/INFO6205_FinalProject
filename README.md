@@ -1,4 +1,4 @@
-# **Team 20: Travelling Sales Man Problem** #
+# **Team 20: Travelling Salesman Problem** #
 
 ## **Team Members:** ##
 1. Surbhi Soni – 002969578
